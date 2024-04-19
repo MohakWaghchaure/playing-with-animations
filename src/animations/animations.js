@@ -12,7 +12,7 @@ gsap.registerEffect({
     effect: (targets, config) => {
       return gsap.fromTo(targets, { duration: config.duration, opacity: 0.2 }, { duration: config.duration, opacity: 0.5 });
     },
-    // defaults: { duration: 10 }, 
+    defaults: { duration: 10 }, 
     extendTimeline: true, 
 });
 gsap.registerEffect({
