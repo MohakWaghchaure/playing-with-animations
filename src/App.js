@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
+import IntroSection from './components/IntroSection';
+import '../src/animations/animations.js';
+import Shapes from './components/Shapes.js';
+import ChessBoard from './components/ChessBoard.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='body-container'>
+      <IntroSection></IntroSection>
+      <Shapes></Shapes>
+      <ChessBoard></ChessBoard>
     </div>
   );
 }

@@ -1,0 +1,213 @@
+$color1: #000000;
+$color2: #F4DFC8;
+$color3: #F4EAE0;
+$color4: #FAF6F0;
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 16.5%;
+}
+
+.body-container{
+    background: rgb(0,0,0);
+    .intro-section{
+        min-height: 100vh;
+        overflow: hidden;
+        position: relative;
+        // border: 1px solid $color2;
+        box-shadow: inset 0 0 20px #3d3d3d;
+        .intro-conatiner{
+            height: 100vh;
+            display: flex;
+            align-items: start;
+            justify-content: left;
+            padding: 100px;
+            color: $color4;
+            .text-container{
+                font-size: 2.5rem;
+                max-width: 800px;
+            }
+        }
+        .backgroundCircle{
+            position: absolute;
+            border: 1px solid $color4;
+            border-radius: 50%;
+            height: 400px;
+            width: 400px;
+            box-shadow: inset 0 0 20px #f8a100;
+            &.one{
+                top: -10%;
+                left: 25%;
+            }
+            &.two{
+                top: 80%;
+                left: 0%;
+            }
+            &.three{
+                top: 28%;
+                left: -10%;
+            }
+            &.four{
+                top: 40%;
+                left: 65%;
+            }
+            &.five{
+                top: 15%;
+                right: -20%;
+            }
+        }
+    }
+    .shapes-section{
+        .shapes-conatiner{
+            min-height: 100vh;
+            padding: 40px;
+            .cube-wrapper{
+                border: 1px solid $color4;
+                background: rgb(250,246,240);
+                background: radial-gradient(circle, rgba(250,246,240,1) 0%, rgba(244,223,200,1) 100%);
+            }
+            .cube{
+                height: 50px;
+                width: 50px;
+                background: rgb(250,246,240);
+                background: radial-gradient(circle, rgba(250,246,240,1) 0%, rgba(244,223,200,1) 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $color1;
+                font-size: 2rem;
+                border-radius: 10%;
+                border: 1px solid $color1;
+            }
+        }
+    }
+    .chessboard-section{
+        .chessboard-conatiner{
+            min-height: 100vh;
+            // padding: 40px;
+            .chessboard-wrapper{
+                border: 1px solid $color4;
+                background: rgb(250,246,240);
+                background: radial-gradient(circle, rgba(250,246,240,1) 0%, rgba(244,223,200,1) 100%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 100px;
+                .chessboard{
+                    max-height: fit-content;
+                    max-width: fit-content;
+                    border: 10px solid #808080;
+                    .board-row{
+                        display: flex;
+                        width: auto;
+                        .board-column{
+                            border: 1px solid $color2;
+                            min-height: 75px;
+                            min-width: 75px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            &.even{
+                                background: rgb(255,255,255);
+                                background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(198,165,129,1) 100%);
+                            }
+                            &.odd{
+                                background: rgb(93,93,93);
+                                background: linear-gradient(180deg, rgba(93,93,93,1) 0%, rgba(198,165,129,1) 100%);
+                            }
+                            .piece{
+                                height: 50px;
+                                width: 50px;
+                                &.pawn-dark{
+                                    background-image: url('../images/pawn-dark.png');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                    height: 45px;
+                                    width: 45px;
+                                }
+                                &.pawn-light{
+                                    background-image: url('../images/pawn-light.png');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                    height: 45px;
+                                    width: 45px;
+                                }
+                                &.bishop-dark{
+                                    background-image: url('../images/bishop-dark.png');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                }
+                                &.bishop-light{
+                                    background-image: url('../images/bishop-light.png');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                }
+                                &.rook-dark{
+                                    background-image: url('../images/rook-dark.png');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                }
+                                &.rook-light{
+                                    background-image: url('../images/rook-light.png');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                }
+                                &.knight-dark{
+                                    background-image: url('../images/knight-dark.png');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                }
+                                &.knight-light{
+                                    background-image: url('../images/knight-light.png');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                }
+                                &.king-dark{
+                                    background-image: url('../images/king-dark.png');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                }
+                                &.king-light{
+                                    background-image: url('../images/king-light.png');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                }
+                                &.queen-dark{
+                                    background-image: url('../images/queen-dark.png');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                }
+                                &.queen-light{
+                                    background-image: url('../images/queen-light.png');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: contain;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+
+}
