@@ -2,6 +2,7 @@ $color1: #000000;
 $color2: #F4DFC8;
 $color3: #F4EAE0;
 $color4: #FAF6F0;
+$color5: #f8a100;
 
 
 body{
@@ -15,12 +16,53 @@ body{
 
 .body-container{
     background: rgb(0,0,0);
+    position: relative;
+    .Progressbar-section{
+        opacity: 0;
+        position: fixed;
+        top: 20%;
+        right: 5%;
+        height: 55%;
+        width: 20px;
+        z-index: 10;  
+        .progressbar{
+            height: 100%;
+            position: relative;
+            .progress-points{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                height: 100%;
+                position: relative;
+                .point{
+                    height: 11px;
+                    width: 11px;
+                    border: 1px solid $color2;
+                    border-radius: 50%;
+                    background-color: $color1;
+                    opacity: 1;
+                    z-index: 10;
+                }
+            }  
+            .bar{
+                position: absolute;
+                // height: 100%;
+                width: 1.5px;
+                top: 0%;
+                left: 45%;
+                background: $color5;
+                z-index: 1;
+            }
+        }
+        
+    }
     .intro-section{
         min-height: 100vh;
         overflow: hidden;
         position: relative;
-        // border: 1px solid $color2;
-        box-shadow: inset 0 0 20px #3d3d3d;
+        background: $color1;
+        box-shadow: inset 0 0 20px #181818;
         .intro-conatiner{
             height: 100vh;
             display: flex;
@@ -63,6 +105,8 @@ body{
         }
     }
     .shapes-section{
+        background: $color2;
+        box-shadow: inset 0 0 100px #000000;
         .shapes-conatiner{
             min-height: 100vh;
             padding: 40px;
@@ -209,5 +253,32 @@ body{
         }
     }
 
+
+
+
+
+
+
+
+
+
+
+    .test-section{
+        // height: 500vh;
+        width: 100vh;
+        background-color: #000000;
+        position: relative;
+        .trigger{
+            height: 100vh;
+            width: 100vh;
+            background-color: #000000;
+            .mark{
+                border: 1px solid $color4;
+                height: 2px;
+                width: 100px;
+                background-color: #F4EAE0;
+            }
+        }
+    }
 
 }

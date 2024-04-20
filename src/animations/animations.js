@@ -7,6 +7,7 @@ import MotionPathPlugin from "gsap/MotionPathPlugin";
 
 gsap.registerPlugin(TextPlugin, ScrollTrigger, Draggable, Flip, MotionPathPlugin);
 
+// ------------------hero page background animations----------------------
 gsap.registerEffect({
     name: "fadeOut",
     effect: (targets, config) => {
@@ -41,6 +42,7 @@ gsap.registerEffect({
 });
 
 
+// ------------------Intro text-------------------------
 let newText = [
     'Why animations and interactivity are important in the website?', 
     'Animation and interactivity capture attention and encourage exploration.', 
@@ -81,7 +83,6 @@ window.onload = function () {
     let t5 = gsap.timeline({repeat: 100});
     t5.scaleIn(".backgroundCircle.odd", { duration: 40 });
     t5.scaleOut(".backgroundCircle.odd", { duration: 40 });
-   
 
     
     // -----------Draggable cubes-------------------------
@@ -90,7 +91,19 @@ window.onload = function () {
     // -----------Draggable chess pieces-------------------------
     Draggable.create(".piece", { bounds: ".chessboard-conatiner", inertia: true });
       
-     
+    //  -----------progressbar visibility control--------------------
+
+    let progressPoints = document.querySelectorAll(".progress-points .point");
+    let triggerPoints = document.querySelectorAll(".test-section .trigger");
+
+    gsap.to(".Progressbar-section", { scrollTrigger: ".test-section", opacity: 1,});
+
+    for(let i=0; i< progressPoints.length; i++){
+      gsap.to( progressPoints[i], {
+        scrollTrigger: { trigger: triggerPoints[i], start: "top top", end:"top 100px", scrub: true,},
+        background: "#ffffff", boxShadow: "inset 0 0 20px #ffffff", opacity: 1,
+      });
+    }
 };
 
 
