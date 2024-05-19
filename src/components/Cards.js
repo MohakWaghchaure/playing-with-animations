@@ -16,7 +16,7 @@ function Cards(){
       };
     return(
         <Fragment>
-            <div className='cards-section'>
+            <div className='cards-section trigger'>
                 <div className='container cards-container'>
                     <div className='title'>
                         Elements like card sliders boost visual appeal and offer versatility.

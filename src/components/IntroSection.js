@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 function IntroSection(){
     return(
         <Fragment>
-            <div className='intro-section'>
+            <div className='intro-section trigger'>
                 <div className='container intro-conatiner'>
                     <div className='text-container intro-text'></div>
                 </div>
