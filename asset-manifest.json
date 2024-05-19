@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.ff913835.css",
-    "main.js": "/react-gh-pages/static/js/main.a87874e0.js",
-    "static/js/453.b4bdcc6b.chunk.js": "/react-gh-pages/static/js/453.b4bdcc6b.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.ff913835.css.map": "/react-gh-pages/static/css/main.ff913835.css.map",
-    "main.a87874e0.js.map": "/react-gh-pages/static/js/main.a87874e0.js.map",
-    "453.b4bdcc6b.chunk.js.map": "/react-gh-pages/static/js/453.b4bdcc6b.chunk.js.map"
+    "main.css": "/playing-with-animations/static/css/main.ff913835.css",
+    "main.js": "/playing-with-animations/static/js/main.b7378977.js",
+    "static/js/453.b4bdcc6b.chunk.js": "/playing-with-animations/static/js/453.b4bdcc6b.chunk.js",
+    "index.html": "/playing-with-animations/index.html",
+    "main.ff913835.css.map": "/playing-with-animations/static/css/main.ff913835.css.map",
+    "main.b7378977.js.map": "/playing-with-animations/static/js/main.b7378977.js.map",
+    "453.b4bdcc6b.chunk.js.map": "/playing-with-animations/static/js/453.b4bdcc6b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ff913835.css",
-    "static/js/main.a87874e0.js"
+    "static/js/main.b7378977.js"
   ]
 }
