@@ -25,6 +25,7 @@ function App() {
         <ScrollEffect></ScrollEffect>
         {/* <HorizonalScreens></HorizonalScreens> */}
         {/* <TestSection></TestSection> */}
+        
       </div>
     </Fragment>
     
