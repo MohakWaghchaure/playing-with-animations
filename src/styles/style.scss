@@ -46,10 +46,27 @@ body{
         }
     }
 }
+.small-screen{
+    display: none;
+    min-height: 100vh;
+    min-width: 100vh;
+    color: $color2;
+    background-color: $color1;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @media screen and (max-width: 1440px) {
+        display: flex;
+    }
+}
 .body-container{
-    background: $color1;
+    background: $color2;
     position: relative;
     overflow-x: hidden;
+    @media screen and (max-width: 1440px) {
+        display: none;
+    }
     
     .Progressbar-section{
         opacity: 0;
@@ -138,106 +155,15 @@ body{
             }
         }
     }
-    .cards-section{
-        padding: 100px;
-        .cards-container{
-            .title{
-                font-size: 2rem;
-                text-align: center;
-                padding-bottom: 70px;
-            }
-            .card-wrapper{
-                padding: 0px 20px;
-                .card{
-                    background-color: $color1;
-                    border: 1px solid $color4;
-                    padding: 30px 35px;
-                    transition: 0.2s;
-                    cursor: grab;
-                    &:hover{
-                        // box-shadow: 0 0 10px 0px $color5;
-                        transition: 0.2s;
-                        box-shadow: inset 0 0 10px $color5;
-                    }
-                    .picture{
-                        
-                    }
-                    .headline{
-                        font-size: 2rem;
-                        padding-bottom: 10px;
-                        color: $color4;
-                    }
-                    .description{
-                        font-size: 0.9rem;
-                        padding-bottom: 20px;
-                        color: $color4;
-                        min-height: 150px;
-                    }
-                    .btn-wrapper{
-                        padding-bottom: 10px;
-                        .btn{
-                            color: $color4;
-                            min-width: 100%;
-                            padding: 8px 18px;
-                            border: 1px solid $color4;
-                            font-size: 1rem;
-                            &:hover{
-                                border: 1px solid $color5;
-                                background-color: $color2;
-                                color: $color1;
-                            }
-                        }
-                    }
-                }
-            }
-            .slider-arrows{
-                width: 100%;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 40px;
-                .arrow{
-                    border-radius: 50%;
-                    border: 1px solid $color2;
-                    height: 45px;
-                    width: 45px;
-                    margin: 15px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    transition: 0.2s;
-                    cursor: pointer;
-                    img{
-                        height: 10px;
-                        width: 10px;
-                    }
-                    &:hover{
-                        box-shadow: inset 0 0 10px $color5;
-                        transform: scale(1.1);
-                        transition: 0.2s;
-                    }
-                    &.left{
-                        img{
-                            transform: rotate(180deg);
-                        }
-                    }
-                }
-                
-                
-            }
-        }
-        .slick-arrow{
-            display: none !important;
-        }
-    }
     .shapes-section{
         padding: 100px;
+        background: $color1;
         .shapes-conatiner{
             min-height: fit-content;
             padding: 40px;
             box-shadow: inset 0 0 10px $color4;
             border-radius: 10px;
+            margin-bottom: 100px;
             .title{
                 font-size: 1.8rem;
                 padding-bottom: 50px;
@@ -278,13 +204,116 @@ body{
                 }
             }
         }
+        .trip-effect-container{
+            h2{
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            .trip-squares-wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 150px;
+                width: 100%;  
+                border-bottom: 1px solid $color2;  
+                .trip-square, .trip-circle{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &.one{
+                        padding: 10px;
+                        height: 400px;
+                        width: 400px;
+                        background: rgb(244,223,200);
+                        background: linear-gradient(90deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 100%);
+                        border: 1px solid $color1;
+                    }
+                    &.two{
+                        padding: 10px;
+                        height: 380px;
+                        width: 380px;
+                        background-color: $color1;
+                        border: 1px solid $color1;
+                    }
+                    &.three{
+                        padding: 10px;
+                        height: 350px;
+                        width: 350px;
+                        background: rgb(244,223,200);
+                        background: linear-gradient(90deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 100%);
+                        border: 1px solid $color1;
+                    }
+                    &.four{
+                        padding: 10px;
+                        height: 310px;
+                        width: 310px;
+                        background-color: $color1;
+                        border: 1px solid $color1;
+                    }
+                    &.five{
+                        padding: 10px;
+                        height: 280px;
+                        width: 280px;
+                        background: rgb(244,223,200);
+                        background: linear-gradient(90deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 100%);
+                        border: 1px solid $color1;
+                    }
+                    &.six{
+                        padding: 10px;
+                        height: 250px;
+                        width: 250px;
+                        background-color: $color1;
+                        border: 1px solid $color1;
+                    }
+                    &.seven{
+                        padding: 10px;
+                        height: 210px;
+                        width: 210px;
+                        background: rgb(244,223,200);
+                        background: linear-gradient(90deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 100%);
+                        border: 1px solid $color1;
+                    }
+                    &.eight{
+                        padding: 10px;
+                        height: 180px;
+                        width: 180px;
+                        background-color: $color1;
+                        border: 1px solid $color1;
+                    }
+                    &.nine{
+                        padding: 10px;
+                        height: 140px;
+                        width: 140px;
+                        background: rgb(244,223,200);
+                        background: linear-gradient(90deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 100%);
+                        border: 1px solid $color1;
+                    }
+                    &.ten{
+                        padding: 10px;
+                        height: 100px;
+                        width: 100px;
+                        background-color: $color1;
+                        border: 1px solid $color1;
+                    }
+                }
+                .trip-circle{
+                    border-radius: 50%;
+                    padding: 50px;
+                    // border: 1px solid $color1 !important;
+                    // background: rgb(244,223,200);
+                    // background: linear-gradient(90deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 100%);
+                }
+            }
+        }
     }
     .scrollEffect-section{
+        background: rgb(244,223,200);
+        background: linear-gradient(0deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 50%);
         .scrollEffect-conatiner{
-            height: 150vh;
+            height: 100vh;
             .title{
                 font-size: 1.8rem;
-                padding-bottom: 50px;
+                padding-bottom: 100px;
                 text-align: center;  
             }
             .bouncing-ball{
@@ -326,7 +355,7 @@ body{
         }
         .flooting-bubbles-wrapper{
             position: relative;
-            height: 200vh;
+            height: 150vh;
             width: 100%;
             .bubble{
                 position: absolute;
@@ -375,6 +404,13 @@ body{
                     top: 8%;
                     left: 10%;
                 }
+            }
+        }
+        .text{
+            border-bottom: 1px solid $color1;
+            h2{
+                text-align: center;
+                transform: translateY(-350px);
             }
         }
     }
@@ -434,7 +470,7 @@ body{
                                 height: 50px;
                                 width: 50px;
                                 &.pawn-dark{
-                                    background-image: url('../images/pawn-dark.png');
+                                    background-image: url('../images/chess/pawn-dark.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
@@ -442,7 +478,7 @@ body{
                                     width: 45px;
                                 }
                                 &.pawn-light{
-                                    background-image: url('../images/pawn-light.png');
+                                    background-image: url('../images/chess/pawn-light.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
@@ -450,61 +486,61 @@ body{
                                     width: 45px;
                                 }
                                 &.bishop-dark{
-                                    background-image: url('../images/bishop-dark.png');
+                                    background-image: url('../images/chess/bishop-dark.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
                                 &.bishop-light{
-                                    background-image: url('../images/bishop-light.png');
+                                    background-image: url('../images/chess/bishop-light.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
                                 &.rook-dark{
-                                    background-image: url('../images/rook-dark.png');
+                                    background-image: url('../images/chess/rook-dark.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
                                 &.rook-light{
-                                    background-image: url('../images/rook-light.png');
+                                    background-image: url('../images/chess/rook-light.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
                                 &.knight-dark{
-                                    background-image: url('../images/knight-dark.png');
+                                    background-image: url('../images/chess/knight-dark.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
                                 &.knight-light{
-                                    background-image: url('../images/knight-light.png');
+                                    background-image: url('../images/chess/knight-light.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
                                 &.king-dark{
-                                    background-image: url('../images/king-dark.png');
+                                    background-image: url('../images/chess/king-dark.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
                                 &.king-light{
-                                    background-image: url('../images/king-light.png');
+                                    background-image: url('../images/chess/king-light.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
                                 &.queen-dark{
-                                    background-image: url('../images/queen-dark.png');
+                                    background-image: url('../images/chess/queen-dark.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
                                 &.queen-light{
-                                    background-image: url('../images/queen-light.png');
+                                    background-image: url('../images/chess/queen-light.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
@@ -549,6 +585,160 @@ body{
             }
         }
         
+    }
+    .cards-section{
+        padding: 100px;
+        background-color: $color2;
+        .cards-container{
+            .title{
+                font-size: 2rem;
+                text-align: center;
+                padding-bottom: 70px;
+                color: $color1;
+            }
+            .card-wrapper{
+                padding: 0px 20px;
+                .card{
+                    background-color: $color4;
+                    border: 1px solid $color1;
+                    padding: 30px 35px;
+                    transition: 0.2s;
+                    cursor: grab;
+                    &:hover{
+                        // box-shadow: 0 0 10px 0px $color5;
+                        transition: 0.2s;
+                        box-shadow: inset 0 0 10px $color1;
+                    }
+                    .picture{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding-top: 20px;
+                        padding-bottom: 50px;
+                        img{
+                            height: 80px;
+                            width: 80px;
+                        }
+                    }
+                    .headline{
+                        font-size: 1.5rem;
+                        padding-bottom: 10px;
+                        font-weight: 600;
+                        color: $color1;
+                        position: relative;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 50px;
+                            bottom: 0px;
+                            left: 0px;
+                            background-color: $color1;
+                        }
+                    }
+                    .description{
+                        font-size: 0.9rem;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        color: $color4;
+                        min-height: 150px;
+                        color: $color1;
+                    }
+                    .btn-wrapper{
+                        padding-bottom: 10px;
+                        .btn{
+                            color: $color1;
+                            min-width: 100%;
+                            padding: 8px 18px;
+                            border: 1px solid $color1;
+                            font-size: 1rem;
+                            background-color: $color2;
+                            &:hover{
+                                border: 1px solid $color1;
+                                background-color: $color4;
+                                color: $color1;
+                            }
+                        }
+                    }
+                }
+            }
+            .slider-arrows{
+                width: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 40px;
+                .arrow{
+                    border-radius: 50%;
+                    border: 1px solid $color2;
+                    height: 45px;
+                    width: 45px;
+                    margin: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.2s;
+                    cursor: pointer;
+                    img{
+                        height: 10px;
+                        width: 10px;
+                    }
+                    &:hover{
+                        box-shadow: inset 0 0 10px $color5;
+                        transform: scale(1.1);
+                        transition: 0.2s;
+                    }
+                    &.left{
+                        img{
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+                
+                
+            }
+        }
+        .slick-arrow{
+            display: none !important;
+        }
+    }
+    .drawing-space-section{
+        background-color: #F4EAE0;
+        min-height: 100vh;
+        .drawing-container{
+            padding: 50px 50px;
+            .canvas-wrapper{
+                border: 2px solid $color1;
+                border-radius: 10px;
+                canvas{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+    .bottom-section{
+        .bottom-conatiner{
+
+            .text_1{
+                padding: 100px;
+                width: 100%;
+                font-size: 2rem;
+                color: $color5;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .text_2{
+                padding: 40px;
+                width: 100%;
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
     }
     
 

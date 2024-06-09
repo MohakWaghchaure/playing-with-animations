@@ -6,7 +6,6 @@ function ScrollEffect() {
         <Fragment>
             <div className='scrollEffect-section trigger'>
                 <div className='container scrollEffect-conatiner'>
-                    <div className='title'>Scroll animations enhance web design by creating engaging user experiences through dynamic effects triggered by scrolling.</div>
                     <div className='bouncing-ball'>
                         <div className='rotating-circle'></div>
                         <div className='rotating-shape one'></div>
@@ -26,6 +25,9 @@ function ScrollEffect() {
                     <div className='bubble eight'></div>
                     <div className='bubble nine'></div>
                     <div className='bubble ten'></div>
+                </div>
+                <div className='container text'>
+                    <h2 className='title'>Scroll animations enhance web design by creating engaging user experiences through dynamic effects triggered by scrolling.</h2>
                 </div>
             </div>
         </Fragment>

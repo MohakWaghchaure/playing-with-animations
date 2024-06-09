@@ -8,9 +8,10 @@ import ProgressBar from './components/ProgressBar.js';
 import ScrollEffect from './components/ScrollEffect.js';
 import MouseEffect from './components/MouseEffect.js';
 import Cards from './components/Cards.js';
-import HorizonalScreens from './components/HorizonalScreens.js';
+import DrawingSpace from './components/DrawingSpace.js';
 import PreLoader from './components/PreLoader.js';
 import { Fragment } from 'react';
+import Bottom from './components/Bottom.js';
 
 function App() {
   return (
@@ -20,12 +21,19 @@ function App() {
         <ProgressBar></ProgressBar>
         <IntroSection></IntroSection>
         <MouseEffect></MouseEffect>
-        <Cards></Cards>
         <Shapes></Shapes>
         <ScrollEffect></ScrollEffect>
+        <Cards></Cards>
+        {/* <DrawingSpace></DrawingSpace> */}
+
+        <Bottom></Bottom>
         {/* <HorizonalScreens></HorizonalScreens> */}
         {/* <TestSection></TestSection> */}
+
         
+      </div>
+      <div className='small-screen'>
+          Please use large resolution screen for better experience
       </div>
     </Fragment>
     

@@ -58,11 +58,11 @@ let newText = [
 ]
 
 window.onload = function () {
-    console.log('document loaded');
+    console.log('document loaded..');
 
     // -------------Loading Text----------------------
     const letters = document.querySelectorAll('.loading-text .letter');
-    console.log("letters", letters);
+    // console.log("letters", letters);
     let t7 = gsap.timeline();
 
     for(let j=0; j<letters.length; j++){
@@ -116,23 +116,51 @@ window.onload = function () {
 
     // -----------Draggable chess pieces-------------------------
     Draggable.create(".piece", { bounds: ".chessboard-conatiner", inertia: true });
+
+    // -------------tripping cubes------------------------
+    const cubes = document.querySelectorAll('.trip-square');
+    
+    gsap.to(cubes[0], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(cubes[1], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(cubes[2], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(cubes[3], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(cubes[4], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(cubes[5], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(cubes[6], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(cubes[7], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(cubes[8], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(cubes[9], {rotate: '360deg', repeat: 100, duration: 40});
+
+    const circles_1 = document.querySelectorAll('.trip-circle');
+    console.log('cubes', circles_1);
+    gsap.to(circles_1[0], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(circles_1[1], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(circles_1[2], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(circles_1[3], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(circles_1[4], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(circles_1[5], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(circles_1[6], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(circles_1[7], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(circles_1[8], {rotate: '360deg', repeat: 100, duration: 40});
+    gsap.to(circles_1[9], {rotate: '360deg', repeat: 100, duration: 40});
+  
       
     //  -----------progressbar visibility control--------------------
 
-    let progressPoints = document.querySelectorAll(".progress-points .point");
-    let triggerPoints = document.querySelectorAll(".scroll-section .trigger");
+    // let progressPoints = document.querySelectorAll(".progress-points .point");
+    // let triggerPoints = document.querySelectorAll(".scroll-section .trigger");
 
-    console.log('triggerPoints', triggerPoints);
-    console.log('progressPoints', progressPoints);
+    // console.log('triggerPoints', triggerPoints);
+    // console.log('progressPoints', progressPoints);
 
-    gsap.to(".Progressbar-section", { scrollTrigger: ".scroll-section", opacity: 1,});
+    // gsap.to(".Progressbar-section", { scrollTrigger: ".scroll-section", opacity: 1,});
 
-    for(let i=0; i< progressPoints.length; i++){
-      gsap.to( progressPoints[i], {
-        scrollTrigger: { trigger: triggerPoints[i+1], start: "top top", end:"top 100px", scrub: true,},
-        background: "#ffffff", boxShadow: "inset 0 0 20px #ffffff", opacity: 1,
-      });
-    }
+    // for(let i=0; i< progressPoints.length; i++){
+    //   gsap.to( progressPoints[i], {
+    //     scrollTrigger: { trigger: triggerPoints[i+1], start: "top top", end:"top 100px", scrub: true,},
+    //     background: "#ffffff", boxShadow: "inset 0 0 20px #ffffff", opacity: 1,
+    //   });
+    // }
 
 
     // --------------- Bouncing ball------------
@@ -176,7 +204,7 @@ window.onload = function () {
     
     // -----------Bubbles-----------
     let bubble = document.querySelectorAll(".flooting-bubbles-wrapper .bubble");
-    console.log('bubble', bubble);
+    // console.log('bubble', bubble);
 
     for(let i=0; i<bubble.length; i++){
       const tBubbles = gsap.timeline({
@@ -195,13 +223,8 @@ window.onload = function () {
       tBubbles.to( bubble[i], {yPercent: -200, duration: 100,});
       tBubbles.to( bubble[i], {opacity: 0, duration: 100});
     }
-    
-
-    
-
-
-
-
+  
+   
 
 
 
