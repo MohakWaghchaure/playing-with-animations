@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/playing-with-animations/static/css/main.ff913835.css",
-    "main.js": "/playing-with-animations/static/js/main.b7378977.js",
+    "main.css": "/playing-with-animations/static/css/main.b0694907.css",
+    "main.js": "/playing-with-animations/static/js/main.dd7daf5d.js",
     "static/js/453.b4bdcc6b.chunk.js": "/playing-with-animations/static/js/453.b4bdcc6b.chunk.js",
+    "static/media/gear.png": "/playing-with-animations/static/media/gear.a2c763068c74be3fa3c5.png",
+    "static/media/play-button.png": "/playing-with-animations/static/media/play-button.ece6d6077991355cb396.png",
+    "static/media/paper-plane.png": "/playing-with-animations/static/media/paper-plane.669d817853370dc1ca08.png",
+    "static/media/beauty.png": "/playing-with-animations/static/media/beauty.91823be3e94fa801fb09.png",
+    "static/media/motion-graphic.png": "/playing-with-animations/static/media/motion-graphic.e6654fbf7a6f042e4ec3.png",
+    "static/media/brightness.png": "/playing-with-animations/static/media/brightness.dfa2210e34696ca82b53.png",
     "index.html": "/playing-with-animations/index.html",
-    "main.ff913835.css.map": "/playing-with-animations/static/css/main.ff913835.css.map",
-    "main.b7378977.js.map": "/playing-with-animations/static/js/main.b7378977.js.map",
+    "main.b0694907.css.map": "/playing-with-animations/static/css/main.b0694907.css.map",
+    "main.dd7daf5d.js.map": "/playing-with-animations/static/js/main.dd7daf5d.js.map",
     "453.b4bdcc6b.chunk.js.map": "/playing-with-animations/static/js/453.b4bdcc6b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff913835.css",
-    "static/js/main.b7378977.js"
+    "static/css/main.b0694907.css",
+    "static/js/main.dd7daf5d.js"
   ]
 }
