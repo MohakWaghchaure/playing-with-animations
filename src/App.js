@@ -22,8 +22,9 @@ function App() {
         <IntroSection></IntroSection>
         <MouseEffect></MouseEffect>
         <Shapes></Shapes>
-        <ScrollEffect></ScrollEffect>
         <Cards></Cards>
+        <ScrollEffect></ScrollEffect>
+        
         {/* <DrawingSpace></DrawingSpace> */}
 
         <Bottom></Bottom>

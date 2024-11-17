@@ -10,13 +10,12 @@ import Icon6 from '../images/play-button.png';
  
 function Cards(){
     var sliderSettings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
         autoplaySpeed: 2000,
       };
     return(

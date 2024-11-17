@@ -1,8 +1,8 @@
-$color1: #000000;
-$color2: #F4DFC8;
-$color3: #F4EAE0;
-$color4: #FAF6F0;
-$color5: #f8a100;
+$color1: #F3F3E0;
+$color2: #133E87;
+$color3: #608BC1;
+$color4: #CBDCEB;
+$color5: #000000;
 
 
 body{
@@ -16,7 +16,7 @@ body{
     box-sizing: border-box;
 }
 .preLoader-section{
-    background-color: $color1;
+    background-color: $color5;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@ body{
     }
 }
 .body-container{
-    background: $color2;
+    background: $color1;
     position: relative;
     overflow-x: hidden;
     @media screen and (max-width: 1440px) {
@@ -113,14 +113,15 @@ body{
         overflow: hidden;
         position: relative;
         background: $color1;
-        box-shadow: inset 0 0 20px #181818;
+        box-shadow: inset 0 0 20px $color2;
         .intro-conatiner{
             height: 100vh;
             display: flex;
             align-items: start;
             justify-content: left;
             padding: 100px;
-            color: $color4;
+            color: $color2;
+            font-weight: 600;
             .text-container{
                 font-size: 2.5rem;
                 max-width: 800px;
@@ -128,11 +129,11 @@ body{
         }
         .backgroundCircle{
             position: absolute;
-            border: 1px solid $color4;
+            border: 1px solid $color3;
             border-radius: 50%;
             height: 400px;
             width: 400px;
-            box-shadow: inset 0 0 20px $color5;
+            box-shadow: inset 0 0 20px $color2;
             &.one{
                 top: -10%;
                 left: 25%;
@@ -157,17 +158,19 @@ body{
     }
     .shapes-section{
         padding: 100px;
-        background: $color1;
+        background: $color4;
         .shapes-conatiner{
             min-height: fit-content;
             padding: 40px;
-            box-shadow: inset 0 0 10px $color4;
+            background-color: $color1;
+            box-shadow: inset 0 0 10px $color2;
             border-radius: 10px;
             margin-bottom: 100px;
             .title{
                 font-size: 1.8rem;
                 padding-bottom: 50px;
                 text-align: center;
+                color: $color2;
             }
             .cube-wrapper{
                 .movie-line{
@@ -196,11 +199,13 @@ body{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    color: $color5;
+                    color: $color1;
+                    font-weight: 600;
                     font-size: 1.5rem;
                     border-radius: 10%;
-                    background-color: $color1;
+                    background-color: $color2;
                     border: 1px solid $color2;
+                    box-shadow: inset 0 0 10px $color2;
                 }
             }
         }
@@ -307,8 +312,12 @@ body{
         }
     }
     .scrollEffect-section{
-        background: rgb(244,223,200);
-        background: linear-gradient(0deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 50%);
+        // background: $color2;
+        background-image: url(../images/background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 100px;
         .scrollEffect-conatiner{
             height: 100vh;
             .title{
@@ -320,13 +329,34 @@ body{
                 position: relative;
                 height: 100%;
                 .rotating-circle{
-                    background: linear-gradient(180deg, rgba(248,161,0,1) 0%, rgba(255,255,255,1) 100%);
+                    background: linear-gradient(180deg, $color1 0%, $color2 100%);
                     position: absolute;
                     border-radius: 50%;
                     height: 200px;
                     width: 200px;
                     top: 20%;
-                    left: 58%;                    
+                    left: 58%;    
+                    border: 2px solid $color4;
+                    &.one{
+                        top: 0%;
+                        left: 0%;  
+                    }   
+                    &.two{
+                        top: 10%;
+                        left: 22%;  
+                    }                
+                    &.three{
+                        top: 20%;
+                        left: 42%;  
+                    }   
+                    &.four{
+                        top: 30%;
+                        left: 65%;  
+                    }   
+                    &.five{
+                        top: 40%;
+                        left: 85%;  
+                    }   
                 }
                 .rotating-shape{
                     height: 350px;
@@ -359,7 +389,7 @@ body{
             width: 100%;
             .bubble{
                 position: absolute;
-                background-color: $color2;
+                background-color: $color1;
                 border-radius: 50%;
                 height: 500px;
                 width: 500px;
@@ -407,9 +437,10 @@ body{
             }
         }
         .text{
-            border-bottom: 1px solid $color1;
+            // border-bottom: 1px solid $color1;
             h2{
                 text-align: center;
+                color: $color2;
                 transform: translateY(-350px);
             }
         }
@@ -558,20 +589,20 @@ body{
         position: relative;
         .mouseEffect-wrapper{
             height: 100vh;
-            background-color: $color1;
-            box-shadow: inset 0 0 20px $color2;
+            background-color: $color2;
+            box-shadow: inset 0 0 20px $color3;
             .mouseEffect-conatiner{
                 padding: 100px 50px;
                 font-size: 3.5rem;
                 font-weight: 500;
-                color: $color2;
+                color: $color1;
             }
         }
         .mouseEffect-overlay{
             position: absolute;
             top: 0%;
             left: 0%;
-            background-color: $color2;
+            background-color: $color4;
             min-width: 100%;
             height: 100vh;
             // clip-path: circle(100px at 50% 50%);
@@ -581,33 +612,34 @@ body{
                 padding: 100px 50px;
                 font-size: 3.5rem;
                 font-weight: 500;
-                color: $color1;
+                color: $color2;
             }
         }
         
     }
     .cards-section{
         padding: 100px;
-        background-color: $color2;
+        background-color: $color1;
         .cards-container{
             .title{
                 font-size: 2rem;
                 text-align: center;
                 padding-bottom: 70px;
-                color: $color1;
+                color: $color5;
             }
             .card-wrapper{
                 padding: 0px 20px;
                 .card{
-                    background-color: $color4;
-                    border: 1px solid $color1;
+                    background-color: #ffffff;
+                    border: 2px solid $color4;
                     padding: 30px 35px;
                     transition: 0.2s;
                     cursor: grab;
+                    box-shadow: inset 0 0 50px $color4;
                     &:hover{
-                        // box-shadow: 0 0 10px 0px $color5;
+                        border: 2px solid $color3;
                         transition: 0.2s;
-                        box-shadow: inset 0 0 10px $color1;
+                        
                     }
                     .picture{
                         display: flex;
@@ -624,7 +656,7 @@ body{
                         font-size: 1.5rem;
                         padding-bottom: 10px;
                         font-weight: 600;
-                        color: $color1;
+                        color: $color2;
                         position: relative;
                         &::after{
                             content: '';
@@ -633,7 +665,7 @@ body{
                             width: 50px;
                             bottom: 0px;
                             left: 0px;
-                            background-color: $color1;
+                            background-color: $color2;
                         }
                     }
                     .description{
@@ -642,7 +674,7 @@ body{
                         padding-bottom: 20px;
                         color: $color4;
                         min-height: 150px;
-                        color: $color1;
+                        color: $color5;
                     }
                     .btn-wrapper{
                         padding-bottom: 10px;
@@ -702,6 +734,10 @@ body{
         .slick-arrow{
             display: none !important;
         }
+        .slick-list{
+            padding-bottom: 50px;
+        }
+        
     }
     .drawing-space-section{
         background-color: #F4EAE0;

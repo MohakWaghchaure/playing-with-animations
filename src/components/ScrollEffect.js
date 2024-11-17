@@ -7,11 +7,15 @@ function ScrollEffect() {
             <div className='scrollEffect-section trigger'>
                 <div className='container scrollEffect-conatiner'>
                     <div className='bouncing-ball'>
-                        <div className='rotating-circle'></div>
-                        <div className='rotating-shape one'></div>
+                        <div className='rotating-circle one'></div>
+                        <div className='rotating-circle two'></div>
+                        <div className='rotating-circle three'></div>
+                        <div className='rotating-circle four'></div>
+                        <div className='rotating-circle five'></div>
+                        {/* <div className='rotating-shape one'></div>
                         <div className='rotating-shape two'></div>
                         <div className='rotating-shape three'></div>
-                        <div className='rotating-shape four'></div>
+                        <div className='rotating-shape four'></div> */}
                     </div>
                 </div>
                 <div className='flooting-bubbles-wrapper'>

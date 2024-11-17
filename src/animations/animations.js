@@ -167,21 +167,97 @@ window.onload = function () {
     const circle1 = gsap.timeline({
       scrollTrigger: {
         scrub: 4,
-        trigger: ".rotating-circle",
+        trigger: ".rotating-circle.one",
         start: "top 80%",
         end: "bottom 0%",
         // markers: "true",
         toggleActions: "restart none reverse none",
       },
     });
+
+    circle1.to(".rotating-circle.one", {rotateZ: 90, y: 400, duration: 10});
+    circle1.to(".rotating-circle.one", {rotateZ: 180, y: -100, duration: 10});
+    circle1.to(".rotating-circle.one", {rotateZ: 270, y: 200, duration: 10});
+    circle1.to(".rotating-circle.one", {rotateZ: 360, y: -100, duration: 10});
+    circle1.to(".rotating-circle.one", {scale: 10,duration: 10})
+    circle1.to(".rotating-circle.one", {scale: 20, duration: 10})
+    circle1.to(".rotating-circle.one", {opacity: 0, duration: 10})
+
+    const circle2 = gsap.timeline({
+      scrollTrigger: {
+        scrub: 4,
+        trigger: ".rotating-circle.two",
+        start: "top 80%",
+        end: "bottom 0%",
+        // markers: "true",
+        toggleActions: "restart none reverse none",
+      },
+    });
+
+    circle2.to(".rotating-circle.two", {rotateZ: 90, y: 400, duration: 10});
+    circle2.to(".rotating-circle.two", {rotateZ: 180, y: -100, duration: 10});
+    circle2.to(".rotating-circle.two", {rotateZ: 270, y: 200, duration: 10});
+    circle2.to(".rotating-circle.two", {rotateZ: 360, y: -100, duration: 10});
+    circle2.to(".rotating-circle.two", {scale: 10,duration: 10})
+    circle2.to(".rotating-circle.two", {scale: 20, duration: 10})
+    circle2.to(".rotating-circle.two", {opacity: 0, duration: 10})
     
-    circle1.to(".rotating-circle", {rotateZ: 90, y: 400, duration: 10});
-    circle1.to(".rotating-circle", {rotateZ: 180, y: -100, duration: 10});
-    circle1.to(".rotating-circle", {rotateZ: 270, y: 400, duration: 10});
-    circle1.to(".rotating-circle", {rotateZ: 360, y: -100, duration: 10});
-    circle1.to(".rotating-circle", {scale: 10,duration: 10})
-    circle1.to(".rotating-circle", {scale: 20, duration: 10})
-    circle1.to(".rotating-circle", {opacity: 0, duration: 10})
+    const circle3 = gsap.timeline({
+      scrollTrigger: {
+        scrub: 4,
+        trigger: ".rotating-circle.three",
+        start: "top 80%",
+        end: "bottom 0%",
+        // markers: "true",
+        toggleActions: "restart none reverse none",
+      },
+    });
+
+    circle3.to(".rotating-circle.three", {rotateZ: 90, y: 400, duration: 10});
+    circle3.to(".rotating-circle.three", {rotateZ: 180, y: -100, duration: 10});
+    circle3.to(".rotating-circle.three", {rotateZ: 270, y: 200, duration: 10});
+    circle3.to(".rotating-circle.three", {rotateZ: 360, y: -100, duration: 10});
+    circle3.to(".rotating-circle.three", {scale: 10,duration: 10})
+    circle3.to(".rotating-circle.three", {scale: 20, duration: 10})
+    circle3.to(".rotating-circle.three", {opacity: 0, duration: 10})
+
+    const circle4 = gsap.timeline({
+      scrollTrigger: {
+        scrub: 4,
+        trigger: ".rotating-circle.four",
+        start: "top 80%",
+        end: "bottom 0%",
+        // markers: "true",
+        toggleActions: "restart none reverse none",
+      },
+    });
+
+    circle4.to(".rotating-circle.four", {rotateZ: 90, y: 400, duration: 10});
+    circle4.to(".rotating-circle.four", {rotateZ: 180, y: -100, duration: 10});
+    circle4.to(".rotating-circle.four", {rotateZ: 270, y: 200, duration: 10});
+    circle4.to(".rotating-circle.four", {rotateZ: 360, y: -100, duration: 10});
+    circle4.to(".rotating-circle.four", {scale: 10,duration: 10})
+    circle4.to(".rotating-circle.four", {scale: 20, duration: 10})
+    circle4.to(".rotating-circle.four", {opacity: 0, duration: 10})
+
+    const circle5 = gsap.timeline({
+      scrollTrigger: {
+        scrub: 4,
+        trigger: ".rotating-circle.five",
+        start: "top 80%",
+        end: "bottom 0%",
+        // markers: "true",
+        toggleActions: "restart none reverse none",
+      },
+    });
+
+    circle5.to(".rotating-circle.five", {rotateZ: 90, y: 400, duration: 10});
+    circle5.to(".rotating-circle.five", {rotateZ: 180, y: -100, duration: 10});
+    circle5.to(".rotating-circle.five", {rotateZ: 270, y: 200, duration: 10});
+    circle5.to(".rotating-circle.five", {rotateZ: 360, y: -100, duration: 10});
+    circle5.to(".rotating-circle.five", {scale: 10,duration: 10})
+    circle5.to(".rotating-circle.five", {scale: 20, duration: 10})
+    circle5.to(".rotating-circle.five", {opacity: 0, duration: 10})
 
     
     // -----------Rotating squares-----------

@@ -42,7 +42,7 @@ function Shapes(){
                         </div>
                     </div>
                 </div>
-                <div className='container trip-effect-container'>
+                {/* <div className='container trip-effect-container'>
                     <h2>Integrating shapes creatively into web design can significantly enhance the visual appeal and user experience of a website</h2>
                     <div className='trip-squares-wrapper'>
                         <div className='trip-square one'>
@@ -84,7 +84,7 @@ function Shapes(){
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </Fragment>
     )
