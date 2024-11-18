@@ -6,6 +6,7 @@ function ScrollEffect() {
         <Fragment>
             <div className='scrollEffect-section trigger'>
                 <div className='container scrollEffect-conatiner'>
+                <h2 className='title'>Integrating shapes creatively into web design can significantly enhance the visual appeal and user experience of a website</h2>
                     <div className='bouncing-ball'>
                         <div className='rotating-circle one'></div>
                         <div className='rotating-circle two'></div>

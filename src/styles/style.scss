@@ -157,15 +157,14 @@ body{
         }
     }
     .shapes-section{
-        padding: 100px;
+        padding-top: 100px;
         background: $color4;
         .shapes-conatiner{
             min-height: fit-content;
-            padding: 40px;
+            padding: 50px 50px;
             background-color: $color1;
             box-shadow: inset 0 0 10px $color2;
             border-radius: 10px;
-            margin-bottom: 100px;
             .title{
                 font-size: 1.8rem;
                 padding-bottom: 50px;
@@ -324,19 +323,22 @@ body{
                 font-size: 1.8rem;
                 padding-bottom: 100px;
                 text-align: center;  
+                color: $color2;
             }
             .bouncing-ball{
                 position: relative;
                 height: 100%;
                 .rotating-circle{
                     background: linear-gradient(180deg, $color1 0%, $color2 100%);
+                    border: 2px solid $color2;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                     position: absolute;
                     border-radius: 50%;
                     height: 200px;
-                    width: 200px;
-                    top: 20%;
-                    left: 58%;    
-                    border: 2px solid $color4;
+                    width: 200px;   
+                    color: $color2;
                     &.one{
                         top: 0%;
                         left: 0%;  
@@ -393,7 +395,7 @@ body{
                 border-radius: 50%;
                 height: 500px;
                 width: 500px;
-                box-shadow: 0 0 20px $color5;
+                box-shadow: 0 0 20px $color3;
                 &.one{
                     top: 20%;
                     left: -15%;
@@ -464,21 +466,35 @@ body{
         
     }
     .chessboard-section{
+        background-color: $color4;
+        padding: 100px;
         .chessboard-conatiner{
+            box-shadow: inset 0 0 10px $color2;
+            background-color: $color1;
             min-height: 100vh;
-            // padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 50px 50px;
+            h2{
+                color: $color2;
+                font-size: 1.8rem;
+            }
+            .hint-line {
+                text-align: center;
+                font-size: 1rem;
+                width: 100%;
+                color: #133E87;
+                padding-top: 20px;
+            }
             .chessboard-wrapper{
-                border: 1px solid $color4;
-                background: rgb(250,246,240);
-                background: radial-gradient(circle, rgba(250,246,240,1) 0%, rgba(244,223,200,1) 100%);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 100px;
+                padding: 50px 50px;
                 .chessboard{
                     max-height: fit-content;
                     max-width: fit-content;
-                    border: 10px solid #808080;
+                    border: 10px solid $color2;
                     .board-row{
                         display: flex;
                         width: auto;
@@ -490,12 +506,12 @@ body{
                             align-items: center;
                             justify-content: center;
                             &.even{
-                                background: rgb(255,255,255);
-                                background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(198,165,129,1) 100%);
+                                background: $color1;
+                                background: linear-gradient(180deg, $color1 0%, #ffffff 100%);
                             }
                             &.odd{
-                                background: rgb(93,93,93);
-                                background: linear-gradient(180deg, rgba(93,93,93,1) 0%, rgba(198,165,129,1) 100%);
+                                background: $color2;
+                                background: linear-gradient(180deg, $color3 0%, #ffffff 100%);
                             }
                             .piece{
                                 height: 50px;
@@ -633,20 +649,30 @@ body{
                     background-color: #ffffff;
                     border: 2px solid $color4;
                     padding: 30px 35px;
-                    transition: 0.2s;
+                    transition: 0.5s;
                     cursor: grab;
                     box-shadow: inset 0 0 50px $color4;
                     &:hover{
                         border: 2px solid $color3;
-                        transition: 0.2s;
-                        
+                        transition: 0.5s;
+                        .picture{
+                            transition: 0.5s;
+                            transform: scale(1.2);
+                        }
+                        .headline{
+                            &::after{
+                                transition: 0.5s;
+                                width: 100px;
+                            }
+                        }
                     }
                     .picture{
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        padding-top: 20px;
+                        padding-top: 25px;
                         padding-bottom: 50px;
+                        transition: 0.5s;
                         img{
                             height: 80px;
                             width: 80px;
@@ -665,6 +691,7 @@ body{
                             width: 50px;
                             bottom: 0px;
                             left: 0px;
+                            transition: 0.5s;
                             background-color: $color2;
                         }
                     }
@@ -756,13 +783,13 @@ body{
         
     }
     .bottom-section{
+        background-color: $color1;
         .bottom-conatiner{
-
             .text_1{
                 padding: 100px;
                 width: 100%;
                 font-size: 2rem;
-                color: $color5;
+                color: $color2;
                 height: 100vh;
                 display: flex;
                 align-items: center;
@@ -773,6 +800,7 @@ body{
                 width: 100%;
                 text-align: center;
                 font-size: 1rem;
+                color: $color3;
             }
         }
     }

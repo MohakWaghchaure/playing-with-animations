@@ -9,7 +9,7 @@ import ScrollEffect from './components/ScrollEffect.js';
 import MouseEffect from './components/MouseEffect.js';
 import Cards from './components/Cards.js';
 import DrawingSpace from './components/DrawingSpace.js';
-import PreLoader from './components/PreLoader.js';
+import ChessBoard from './components/ChessBoard.js';
 import { Fragment } from 'react';
 import Bottom from './components/Bottom.js';
 
@@ -22,11 +22,12 @@ function App() {
         <IntroSection></IntroSection>
         <MouseEffect></MouseEffect>
         <Shapes></Shapes>
+        <ChessBoard></ChessBoard>
         <Cards></Cards>
         <ScrollEffect></ScrollEffect>
         
         {/* <DrawingSpace></DrawingSpace> */}
-
+        
         <Bottom></Bottom>
         {/* <HorizonalScreens></HorizonalScreens> */}
         {/* <TestSection></TestSection> */}

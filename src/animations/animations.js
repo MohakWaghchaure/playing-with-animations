@@ -73,7 +73,7 @@ window.onload = function () {
 
     // -----------Typing Effect-------------------------
     let tl = gsap.timeline({repeat: 5, repeatDelay: 2}); 
-    tl.to(".intro-text", {text: { value: newText[0],}, ease: "none", duration: 4, delay: 2});
+    tl.to(".intro-text", {text: { value: newText[0],}, ease: "none", duration: 4, delay: 1});
     tl.to(".intro-text", {text: { value: newText[1],}, ease: "none", duration: 4, delay: 1});
     tl.to(".intro-text", {text: { value: newText[3],}, ease: "none", duration: 4, delay: 1});
     tl.to(".intro-text", {text: { value: newText[4],}, ease: "none", duration: 4, delay: 1});

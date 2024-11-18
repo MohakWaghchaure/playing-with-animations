@@ -1,12 +1,12 @@
 import { Fragment } from 'react';
  
 function ChessBoard(){
-
-    
     return(
         <Fragment>
             <div className='chessboard-section'>
                 <div className='container chessboard-conatiner'>
+                    <h2>It can be leveraged to build interactive chessboards or other engaging board games, enhancing user interaction and creativity.</h2>
+                    <div className='hint-line'>(You can play by dragging the pieces)</div>
                     <div className='chessboard-wrapper'>
                         <div className="chessboard">
                             <div className='board-row'>
