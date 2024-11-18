@@ -13,10 +13,6 @@ function ScrollEffect() {
                         <div className='rotating-circle three'></div>
                         <div className='rotating-circle four'></div>
                         <div className='rotating-circle five'></div>
-                        {/* <div className='rotating-shape one'></div>
-                        <div className='rotating-shape two'></div>
-                        <div className='rotating-shape three'></div>
-                        <div className='rotating-shape four'></div> */}
                     </div>
                 </div>
                 <div className='flooting-bubbles-wrapper'>
