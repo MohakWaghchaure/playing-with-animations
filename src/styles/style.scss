@@ -16,7 +16,6 @@ body{
     box-sizing: border-box;
 }
 .preLoader-section{
-    background-color: $color5;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,6 +28,14 @@ body{
         justify-content: center;
         align-items: center;
         position: relative;
+        .background-color{
+            background-color: $color5;
+            position: absolute;
+            height: 1900px;
+            width: 1900px;
+            top: -100%;
+            border-radius: 50%;
+        }
         .loader-wrapper{
             overflow: hidden;
             .loading-text{
@@ -36,7 +43,7 @@ body{
                     font-size: 5rem;
                     display: inline-block;
                     transform: translateY(100%);
-                    color: $color2;
+                    color: $color1;
                     transition: 0.2s;
                     font-weight: 700;
                 }

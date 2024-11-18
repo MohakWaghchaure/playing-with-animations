@@ -6,6 +6,7 @@ function PreLoader() {
         <Fragment>
             <div className='preLoader-section'>
                 <div className='container preLoader-conatiner'>
+                    <div className='background-color'></div>
                     <div className='loader-wrapper'>
                         <div className='loading-text'>
                             <div className='letter'>W</div>

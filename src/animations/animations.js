@@ -8,6 +8,7 @@ import MotionPathPlugin from "gsap/MotionPathPlugin";
 gsap.registerPlugin(TextPlugin, ScrollTrigger, Draggable, Flip, MotionPathPlugin);
 
 
+
 // ------------------hero page background animations----------------------
 gsap.registerEffect({
     name: "fadeOut",
@@ -60,13 +61,13 @@ window.onload = function () {
 
     // -------------Loading Text----------------------
     const letters = document.querySelectorAll('.loading-text .letter');
-    // console.log("letters", letters);
+    console.log("letters", letters);
     let t7 = gsap.timeline();
 
     for(let j=0; j<letters.length; j++){
       t7.to(letters[j], { x: 0, y:0, duration: 0.2, ease: "bounce" });
     }
-    t7.to(".preLoader-section", { yPercent: -100, ease: "power1.out", duration: 0.5, delay: 0.5});
+    t7.to(".preLoader-section", { yPercent: -200, ease: "power1.out", duration: 0.5, delay: 0.5});
     t7.to(".preLoader-section", { display: 'none' });
 
     // -----------Typing Effect-------------------------

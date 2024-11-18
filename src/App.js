@@ -3,7 +3,7 @@ import './App.scss';
 import IntroSection from './components/IntroSection';
 import '../src/animations/animations.js';
 import Shapes from './components/Shapes.js';
-import TestSection from './components/TestSection.js';
+import PreLoader from './components/PreLoader.js';
 import ProgressBar from './components/ProgressBar.js';
 import ScrollEffect from './components/ScrollEffect.js';
 import MouseEffect from './components/MouseEffect.js';
@@ -16,7 +16,7 @@ import Bottom from './components/Bottom.js';
 function App() {
   return (
     <Fragment>
-      {/* <PreLoader></PreLoader> */}
+      <PreLoader></PreLoader>
       <div className='body-container'>
         <ProgressBar></ProgressBar>
         <IntroSection></IntroSection>
