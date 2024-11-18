@@ -35,6 +35,7 @@ const Transform = () => {
         <div className="transform-section">
             <div className="container transform-container">
                 <h2 className="heading">Dynamic transformation editing functionality brings liveliness to UI interactions</h2>
+                <div className="instruction">(Play with transform properties of the circle with sliders given in the left side of the screen)</div>
                 <div className="transform-window">
                     <div className="controls-wrapper">
                         <h2>Controls</h2>

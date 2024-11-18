@@ -957,7 +957,12 @@ body {
                 width: 100%;
                 text-align: center;
                 font-size: 1rem;
-                color: $color3;
+                color: $color2;
+                a{
+                    text-decoration: none;
+                    color: $color2;
+                    font-weight: 600;
+                }
             }
         }
     }
@@ -1050,7 +1055,14 @@ body {
                 color: $color2;
                 font-size: 1.8rem;
                 width: 100%;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+            .instruction{
+                color: $color2;
+                font-size: 1.2rem;
                 padding-bottom: 100px;
+                width: 100%;
                 text-align: center;
             }
             .transform-window {
