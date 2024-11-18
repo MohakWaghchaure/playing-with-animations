@@ -8,8 +8,6 @@ import MotionPathPlugin from "gsap/MotionPathPlugin";
 gsap.registerPlugin(TextPlugin, ScrollTrigger, Draggable, Flip, MotionPathPlugin);
 
 
-
-
 // ------------------hero page background animations----------------------
 gsap.registerEffect({
     name: "fadeOut",
@@ -300,25 +298,23 @@ window.onload = function () {
       tBubbles.to( bubble[i], {opacity: 0, duration: 100});
     }
   
-   
+    //--------Flowing text-------------------
+    gsap.timeline({ repeat: -1 }) // Infinite loop
+    .to(".flowing-element.one", {
+      x: "-100%", // Move the text left
+      duration: 100, // Adjust the speed
+      ease: "linear"
+    })
+    .set(".text-flow", { x: "0" }); // Reset the position
 
+    gsap.timeline({ repeat: -1 }) // Infinite loop
+    .to(".flowing-element.two", {
+      x: "-100%", // Move the text left
+      duration: 200, // Adjust the speed
+      ease: "linear"
+    })
+    .set(".text-flow", { x: "0" }); // Reset the position
 
-
-    // const hSlider = document.querySelector(".horizonal-slider-container");
-    // let sliderWidth = hSlider.offsetWidth;
-    // let amountToScroll = sliderWidth - window.innerWidth;
-    // console.log("sliderWidth", sliderWidth, amountToScroll);
-
-    // const hScreens = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: hSlider,
-    //     pin: true,
-    //     scrub: 4,
-    //     end: () => "+=" + hSlider.offsetWidth,
-    //   },
-    // });
-
-    // hScreens.to(hSlider, {xPercent: -66,});
     
 
 
