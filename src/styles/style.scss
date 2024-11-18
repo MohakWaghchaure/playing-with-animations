@@ -5,7 +5,7 @@ $color4: #CBDCEB;
 $color5: #000000;
 
 
-body{
+body {
     margin: 0px;
     padding: 0px;
     display: block;
@@ -15,20 +15,23 @@ body{
     color: $color4;
     box-sizing: border-box;
 }
-.preLoader-section{
+
+.preLoader-section {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     height: 100vh;
     min-width: 100%;
-    .preLoader-conatiner{
+
+    .preLoader-conatiner {
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        .background-color{
+
+        .background-color {
             background-color: $color5;
             position: absolute;
             height: 1900px;
@@ -36,10 +39,12 @@ body{
             top: -100%;
             border-radius: 50%;
         }
-        .loader-wrapper{
+
+        .loader-wrapper {
             overflow: hidden;
-            .loading-text{
-                .letter{
+
+            .loading-text {
+                .letter {
                     font-size: 5rem;
                     display: inline-block;
                     transform: translateY(100%);
@@ -47,13 +52,14 @@ body{
                     transition: 0.2s;
                     font-weight: 700;
                 }
-                
+
             }
 
         }
     }
 }
-.small-screen{
+
+.small-screen {
     display: none;
     min-height: 100vh;
     min-width: 100vh;
@@ -63,37 +69,43 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
+
     @media screen and (max-width: 1440px) {
         display: flex;
     }
 }
-.body-container{
+
+.body-container {
     background: $color1;
     position: relative;
     overflow-x: hidden;
+
     @media screen and (max-width: 1440px) {
         display: none;
     }
-    
-    .Progressbar-section{
+
+    .Progressbar-section {
         opacity: 0;
         position: fixed;
         top: 20%;
         right: 5%;
         height: 55%;
         width: 20px;
-        z-index: 10;  
-        .progressbar{
+        z-index: 10;
+
+        .progressbar {
             height: 100%;
             position: relative;
-            .progress-points{
+
+            .progress-points {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 flex-direction: column;
                 height: 100%;
                 position: relative;
-                .point{
+
+                .point {
                     height: 11px;
                     width: 11px;
                     border: 1px solid $color2;
@@ -102,8 +114,9 @@ body{
                     opacity: 1;
                     z-index: 10;
                 }
-            }  
-            .bar{
+            }
+
+            .bar {
                 position: absolute;
                 // height: 100%;
                 width: 1.5px;
@@ -113,15 +126,17 @@ body{
                 z-index: 1;
             }
         }
-        
+
     }
-    .intro-section{
+
+    .intro-section {
         min-height: 100vh;
         overflow: hidden;
         position: relative;
         background: $color1;
         box-shadow: inset 0 0 20px $color2;
-        .intro-conatiner{
+
+        .intro-conatiner {
             height: 100vh;
             display: flex;
             align-items: start;
@@ -129,63 +144,75 @@ body{
             padding: 100px;
             color: $color2;
             font-weight: 600;
-            .text-container{
+
+            .text-container {
                 font-size: 2.5rem;
                 max-width: 800px;
             }
         }
-        .backgroundCircle{
+
+        .backgroundCircle {
             position: absolute;
             border: 1px solid $color3;
             border-radius: 50%;
             height: 400px;
             width: 400px;
             box-shadow: inset 0 0 20px $color2;
-            &.one{
+
+            &.one {
                 top: -10%;
                 left: 25%;
             }
-            &.two{
+
+            &.two {
                 top: 80%;
                 left: 0%;
             }
-            &.three{
+
+            &.three {
                 top: 28%;
                 left: -10%;
             }
-            &.four{
+
+            &.four {
                 top: 40%;
                 left: 65%;
             }
-            &.five{
+
+            &.five {
                 top: 15%;
                 right: -20%;
             }
         }
     }
-    .shapes-section{
+
+    .shapes-section {
         padding-top: 100px;
         background: $color4;
-        .shapes-conatiner{
+
+        .shapes-conatiner {
             min-height: fit-content;
             padding: 50px 50px;
             background-color: $color1;
             box-shadow: inset 0 0 10px $color2;
             border-radius: 10px;
-            .title{
+
+            .title {
                 font-size: 1.8rem;
                 padding-bottom: 50px;
                 text-align: center;
                 color: $color2;
             }
-            .cube-wrapper{
-                .movie-line{
+
+            .cube-wrapper {
+                .movie-line {
                     font-size: 3rem;
                     text-align: center;
                     color: $color2;
                     padding-bottom: 20px;
                 }
-                .hint-line{
+
+                .hint-line {
                     text-align: center;
                     font-size: 1rem;
                     width: 100%;
@@ -193,12 +220,14 @@ body{
                     padding-bottom: 20px;
                 }
             }
-            .cubes{
+
+            .cubes {
                 display: flex;
                 width: 100%;
                 padding: 20px 20px;
                 justify-content: center;
-                .cube{
+
+                .cube {
                     height: 40px;
                     width: 40px;
                     margin: 10px;
@@ -215,91 +244,105 @@ body{
                 }
             }
         }
-        .trip-effect-container{
-            h2{
+
+        .trip-effect-container {
+            h2 {
                 text-align: center;
                 padding-bottom: 50px;
             }
-            .trip-squares-wrapper{
+
+            .trip-squares-wrapper {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 padding: 150px;
-                width: 100%;  
-                border-bottom: 1px solid $color2;  
-                .trip-square, .trip-circle{
+                width: 100%;
+                border-bottom: 1px solid $color2;
+
+                .trip-square,
+                .trip-circle {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    &.one{
+
+                    &.one {
                         padding: 10px;
                         height: 400px;
                         width: 400px;
-                        background: rgb(244,223,200);
-                        background: linear-gradient(90deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 100%);
+                        background: rgb(244, 223, 200);
+                        background: linear-gradient(90deg, rgba(244, 223, 200, 1) 0%, rgba(0, 0, 0, 1) 100%);
                         border: 1px solid $color1;
                     }
-                    &.two{
+
+                    &.two {
                         padding: 10px;
                         height: 380px;
                         width: 380px;
                         background-color: $color1;
                         border: 1px solid $color1;
                     }
-                    &.three{
+
+                    &.three {
                         padding: 10px;
                         height: 350px;
                         width: 350px;
-                        background: rgb(244,223,200);
-                        background: linear-gradient(90deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 100%);
+                        background: rgb(244, 223, 200);
+                        background: linear-gradient(90deg, rgba(244, 223, 200, 1) 0%, rgba(0, 0, 0, 1) 100%);
                         border: 1px solid $color1;
                     }
-                    &.four{
+
+                    &.four {
                         padding: 10px;
                         height: 310px;
                         width: 310px;
                         background-color: $color1;
                         border: 1px solid $color1;
                     }
-                    &.five{
+
+                    &.five {
                         padding: 10px;
                         height: 280px;
                         width: 280px;
-                        background: rgb(244,223,200);
-                        background: linear-gradient(90deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 100%);
+                        background: rgb(244, 223, 200);
+                        background: linear-gradient(90deg, rgba(244, 223, 200, 1) 0%, rgba(0, 0, 0, 1) 100%);
                         border: 1px solid $color1;
                     }
-                    &.six{
+
+                    &.six {
                         padding: 10px;
                         height: 250px;
                         width: 250px;
                         background-color: $color1;
                         border: 1px solid $color1;
                     }
-                    &.seven{
+
+                    &.seven {
                         padding: 10px;
                         height: 210px;
                         width: 210px;
-                        background: rgb(244,223,200);
-                        background: linear-gradient(90deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 100%);
+                        background: rgb(244, 223, 200);
+                        background: linear-gradient(90deg, rgba(244, 223, 200, 1) 0%, rgba(0, 0, 0, 1) 100%);
                         border: 1px solid $color1;
                     }
-                    &.eight{
+
+                    &.eight {
                         padding: 10px;
                         height: 180px;
                         width: 180px;
                         background-color: $color1;
                         border: 1px solid $color1;
                     }
-                    &.nine{
+
+                    &.nine {
                         padding: 10px;
                         height: 140px;
                         width: 140px;
-                        background: rgb(244,223,200);
-                        background: linear-gradient(90deg, rgba(244,223,200,1) 0%, rgba(0,0,0,1) 100%);
+                        background: rgb(244, 223, 200);
+                        background: linear-gradient(90deg, rgba(244, 223, 200, 1) 0%, rgba(0, 0, 0, 1) 100%);
                         border: 1px solid $color1;
                     }
-                    &.ten{
+
+                    &.ten {
                         padding: 10px;
                         height: 100px;
                         width: 100px;
@@ -307,7 +350,8 @@ body{
                         border: 1px solid $color1;
                     }
                 }
-                .trip-circle{
+
+                .trip-circle {
                     border-radius: 50%;
                     padding: 50px;
                     // border: 1px solid $color1 !important;
@@ -317,25 +361,30 @@ body{
             }
         }
     }
-    .scrollEffect-section{
+
+    .scrollEffect-section {
         // background: $color2;
         background-image: url(../images/background.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         padding-top: 100px;
-        .scrollEffect-conatiner{
+
+        .scrollEffect-conatiner {
             height: 150vh;
-            .title{
+
+            .title {
                 font-size: 1.8rem;
                 padding-bottom: 100px;
-                text-align: center;  
+                text-align: center;
                 color: $color2;
             }
-            .bouncing-ball{
+
+            .bouncing-ball {
                 position: relative;
                 height: 100%;
-                .rotating-circle{
+
+                .rotating-circle {
                     background: linear-gradient(180deg, $color1 0%, $color2 100%);
                     border: 2px solid $color2;
                     background-position: center;
@@ -344,148 +393,180 @@ body{
                     position: absolute;
                     border-radius: 50%;
                     height: 200px;
-                    width: 200px;   
+                    width: 200px;
                     color: $color2;
-                    &.one{
+
+                    &.one {
                         top: 0%;
-                        left: 0%;  
-                    }   
-                    &.two{
+                        left: 0%;
+                    }
+
+                    &.two {
                         top: 10%;
-                        left: 22%;  
-                    }                
-                    &.three{
+                        left: 22%;
+                    }
+
+                    &.three {
                         top: 20%;
-                        left: 42%;  
-                    }   
-                    &.four{
+                        left: 42%;
+                    }
+
+                    &.four {
                         top: 30%;
-                        left: 65%;  
-                    }   
-                    &.five{
+                        left: 65%;
+                    }
+
+                    &.five {
                         top: 40%;
-                        left: 85%;  
-                    }   
+                        left: 85%;
+                    }
                 }
-                .rotating-shape{
+
+                .rotating-shape {
                     height: 350px;
                     width: 350px;
                     position: absolute;
                     border: 5px solid $color2;
                     box-shadow: inset 0 0 10px $color5;
-                    &.one{
+
+                    &.one {
                         top: 10%;
                         left: 10%;
                     }
-                    &.two{
+
+                    &.two {
                         top: 20%;
                         left: 20%;
                     }
-                    &.three{
+
+                    &.three {
                         top: 30%;
                         left: 5%;
                     }
-                    &.four{
+
+                    &.four {
                         top: 40%;
                         left: 20%;
                     }
                 }
             }
         }
-        .flooting-bubbles-wrapper{
+
+        .flooting-bubbles-wrapper {
             position: relative;
             height: 200vh;
             width: 100%;
-            .bubble{
+
+            .bubble {
                 position: absolute;
                 background-color: $color1;
                 border-radius: 50%;
                 height: 500px;
                 width: 500px;
                 box-shadow: 0 0 20px $color3;
-                &.one{
+
+                &.one {
                     top: 20%;
                     left: -15%;
                 }
-                &.two{
+
+                &.two {
                     top: 40%;
                     right: -15%;
                 }
-                &.three{
+
+                &.three {
                     top: 20%;
                     left: 30%;
                 }
-                &.four{
+
+                &.four {
                     top: 28%;
                     left: 5%;
                 }
-                &.five{
+
+                &.five {
                     top: 34%;
                     left: 60%;
                 }
-                &.six{
+
+                &.six {
                     top: 40%;
                     left: 22%;
                 }
-                &.seven{
+
+                &.seven {
                     top: 10%;
-                    left: 85%;                
+                    left: 85%;
                 }
-                &.eight{
+
+                &.eight {
                     top: 16%;
                     left: 49%;
                 }
-                &.nine{
+
+                &.nine {
                     top: 21%;
                     left: 75%;
                 }
-                &.ten{
+
+                &.ten {
                     top: 8%;
                     left: 10%;
                 }
             }
         }
-        .text{
+
+        .text {
+
             // border-bottom: 1px solid $color1;
-            h2{
+            h2 {
                 text-align: center;
                 color: $color2;
                 transform: translateY(-350px);
             }
         }
     }
-    .horizonal-screens-section{
+
+    .horizonal-screens-section {
         height: 100vh;
-        .horizonal-slider-container{
+
+        .horizonal-slider-container {
             height: 100vh;
             box-shadow: inset 0 0 20px $color2;
             display: flex;
             overflow-x: hidden;
-            .section-wrapper{
+
+            .section-wrapper {
                 min-width: 100%;
                 height: 100vh;
-                .horizonal-screens-conatiner{
+
+                .horizonal-screens-conatiner {
                     font-size: 5rem;
                 }
             }
         }
-        
-        
+
+
     }
-    .chessboard-section{
+
+    .chessboard-section {
         background-color: $color4;
         padding: 100px;
-        .chessboard-conatiner{
+
+        .chessboard-conatiner {
             box-shadow: inset 0 0 10px $color2;
             background-color: $color1;
             min-height: 100vh;
             border-radius: 10px;
             text-align: center;
             padding: 50px 50px;
-            h2{
+
+            h2 {
                 color: $color2;
                 font-size: 1.8rem;
             }
+
             .hint-line {
                 text-align: center;
                 font-size: 1rem;
@@ -493,37 +574,45 @@ body{
                 color: #133E87;
                 padding-top: 20px;
             }
-            .chessboard-wrapper{
+
+            .chessboard-wrapper {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 padding: 50px 50px;
-                .chessboard{
+
+                .chessboard {
                     max-height: fit-content;
                     max-width: fit-content;
                     border: 10px solid $color2;
-                    .board-row{
+
+                    .board-row {
                         display: flex;
                         width: auto;
-                        .board-column{
+
+                        .board-column {
                             border: 1px solid $color2;
                             min-height: 75px;
                             min-width: 75px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            &.even{
+
+                            &.even {
                                 background: $color1;
                                 background: linear-gradient(180deg, $color1 0%, #ffffff 100%);
                             }
-                            &.odd{
+
+                            &.odd {
                                 background: $color2;
                                 background: linear-gradient(180deg, $color3 0%, #ffffff 100%);
                             }
-                            .piece{
+
+                            .piece {
                                 height: 50px;
                                 width: 50px;
-                                &.pawn-dark{
+
+                                &.pawn-dark {
                                     background-image: url('../images/chess/pawn-dark.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
@@ -531,7 +620,8 @@ body{
                                     height: 45px;
                                     width: 45px;
                                 }
-                                &.pawn-light{
+
+                                &.pawn-light {
                                     background-image: url('../images/chess/pawn-light.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
@@ -539,61 +629,71 @@ body{
                                     height: 45px;
                                     width: 45px;
                                 }
-                                &.bishop-dark{
+
+                                &.bishop-dark {
                                     background-image: url('../images/chess/bishop-dark.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
-                                &.bishop-light{
+
+                                &.bishop-light {
                                     background-image: url('../images/chess/bishop-light.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
-                                &.rook-dark{
+
+                                &.rook-dark {
                                     background-image: url('../images/chess/rook-dark.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
-                                &.rook-light{
+
+                                &.rook-light {
                                     background-image: url('../images/chess/rook-light.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
-                                &.knight-dark{
+
+                                &.knight-dark {
                                     background-image: url('../images/chess/knight-dark.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
-                                &.knight-light{
+
+                                &.knight-light {
                                     background-image: url('../images/chess/knight-light.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
-                                &.king-dark{
+
+                                &.king-dark {
                                     background-image: url('../images/chess/king-dark.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
-                                &.king-light{
+
+                                &.king-light {
                                     background-image: url('../images/chess/king-light.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
-                                &.queen-dark{
+
+                                &.queen-dark {
                                     background-image: url('../images/chess/queen-dark.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: contain;
                                 }
-                                &.queen-light{
+
+                                &.queen-light {
                                     background-image: url('../images/chess/queen-light.png');
                                     background-repeat: no-repeat;
                                     background-position: center;
@@ -605,30 +705,36 @@ body{
                     }
                 }
             }
-            
+
         }
     }
-    .mouseEffect-section{
+
+    .mouseEffect-section {
         position: relative;
-        .mouseEffect-wrapper{
+
+        .mouseEffect-wrapper {
             height: 100vh;
             background-color: $color2;
             box-shadow: inset 0 0 20px $color3;
-            .mouseEffect-conatiner{
+
+            .mouseEffect-conatiner {
                 padding: 100px 50px;
-                .text{
+
+                .text {
                     font-size: 3.5rem;
                     font-weight: 500;
                     color: $color1;
                     padding-bottom: 40px;
                 }
-                .instruction{
+
+                .instruction {
                     font-size: 1.2rem;
                     color: $color1;
                 }
             }
         }
-        .mouseEffect-overlay{
+
+        .mouseEffect-overlay {
             position: absolute;
             top: 0%;
             left: 0%;
@@ -637,73 +743,87 @@ body{
             height: 100vh;
             clip-path: circle(100px at var(--x, 50%) var(--y, 50%));
             transition: clip-path 0.05s;
-            .mouseEffect-conatiner{
+
+            .mouseEffect-conatiner {
                 padding: 100px 50px;
-                .text{
+
+                .text {
                     font-size: 3.5rem;
                     font-weight: 500;
                     color: $color2;
                     padding-bottom: 40px;
                 }
-                .instruction{
+
+                .instruction {
                     font-size: 1.2rem;
                     color: $color2;
                 }
             }
         }
     }
-    .cards-section{
+
+    .cards-section {
         padding: 100px;
         background-color: $color1;
-        .cards-container{
-            .title{
+
+        .cards-container {
+            .title {
                 font-size: 2rem;
                 text-align: center;
                 padding-bottom: 70px;
                 color: $color5;
             }
-            .card-wrapper{
+
+            .card-wrapper {
                 padding: 0px 20px;
-                .card{
+
+                .card {
                     background-color: #ffffff;
                     border: 2px solid $color4;
                     padding: 30px 35px;
                     transition: 0.5s;
                     cursor: grab;
                     box-shadow: inset 0 0 50px $color4;
-                    &:hover{
+
+                    &:hover {
                         border: 2px solid $color3;
                         transition: 0.5s;
-                        .picture{
+
+                        .picture {
                             transition: 0.5s;
                             transform: scale(1.2);
                         }
-                        .headline{
-                            &::after{
+
+                        .headline {
+                            &::after {
                                 transition: 0.5s;
                                 width: 100px;
                             }
                         }
                     }
-                    .picture{
+
+                    .picture {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         padding-top: 25px;
                         padding-bottom: 50px;
                         transition: 0.5s;
-                        img{
+
+                        img {
                             height: 80px;
                             width: 80px;
                         }
                     }
-                    .headline{
+
+                    .headline {
                         font-size: 1.5rem;
                         padding-bottom: 10px;
                         font-weight: 600;
                         color: $color2;
                         position: relative;
-                        &::after{
+
+                        &::after {
                             content: '';
                             position: absolute;
                             height: 2px;
@@ -714,7 +834,8 @@ body{
                             background-color: $color2;
                         }
                     }
-                    .description{
+
+                    .description {
                         font-size: 0.9rem;
                         padding-top: 20px;
                         padding-bottom: 20px;
@@ -722,16 +843,19 @@ body{
                         min-height: 150px;
                         color: $color5;
                     }
-                    .btn-wrapper{
+
+                    .btn-wrapper {
                         padding-bottom: 10px;
-                        .btn{
+
+                        .btn {
                             color: $color1;
                             min-width: 100%;
                             padding: 8px 18px;
                             border: 1px solid $color1;
                             font-size: 1rem;
                             background-color: $color2;
-                            &:hover{
+
+                            &:hover {
                                 border: 1px solid $color1;
                                 background-color: $color4;
                                 color: $color1;
@@ -740,14 +864,16 @@ body{
                     }
                 }
             }
-            .slider-arrows{
+
+            .slider-arrows {
                 width: 100%;
                 text-align: center;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 padding: 40px;
-                .arrow{
+
+                .arrow {
                     border-radius: 50%;
                     border: 1px solid $color2;
                     height: 45px;
@@ -758,53 +884,64 @@ body{
                     justify-content: center;
                     transition: 0.2s;
                     cursor: pointer;
-                    img{
+
+                    img {
                         height: 10px;
                         width: 10px;
                     }
-                    &:hover{
+
+                    &:hover {
                         box-shadow: inset 0 0 10px $color5;
                         transform: scale(1.1);
                         transition: 0.2s;
                     }
-                    &.left{
-                        img{
+
+                    &.left {
+                        img {
                             transform: rotate(180deg);
                         }
                     }
                 }
-                
-                
+
+
             }
         }
-        .slick-arrow{
+
+        .slick-arrow {
             display: none !important;
         }
-        .slick-list{
+
+        .slick-list {
             padding-bottom: 50px;
         }
-        
+
     }
-    .drawing-space-section{
+
+    .drawing-space-section {
         background-color: #F4EAE0;
         min-height: 100vh;
-        .drawing-container{
+
+        .drawing-container {
             padding: 50px 50px;
-            .canvas-wrapper{
+
+            .canvas-wrapper {
                 border: 2px solid $color1;
                 border-radius: 10px;
-                canvas{
+
+                canvas {
                     height: 100%;
                     width: 100%;
                 }
             }
         }
-        
+
     }
-    .bottom-section{
+
+    .bottom-section {
         background-color: $color1;
-        .bottom-conatiner{
-            .text_1{
+
+        .bottom-conatiner {
+            .text_1 {
                 padding: 100px;
                 width: 100%;
                 font-size: 2rem;
@@ -814,7 +951,8 @@ body{
                 align-items: center;
                 justify-content: center;
             }
-            .text_2{
+
+            .text_2 {
                 padding: 40px;
                 width: 100%;
                 text-align: center;
@@ -823,26 +961,31 @@ body{
             }
         }
     }
-    .flow-section{
+
+    .flow-section {
         padding-bottom: 100px;
-        .flow-container{    
-            h2{
+
+        .flow-container {
+            h2 {
                 width: 100%;
                 text-align: center;
                 font-size: 1.8rem;
                 color: $color5;
                 padding-bottom: 50px;
             }
-            .flowing-wrapper{
+
+            .flowing-wrapper {
                 position: relative;
                 width: 100%;
                 overflow: hidden;
                 white-space: nowrap;
                 padding: 20px 0px;
-                .flowing-element{
+
+                .flowing-element {
                     white-space: nowrap;
                     display: inline-block;
-                    .flow-text{
+
+                    .flow-text {
                         padding: 20px 20px;
                         border: 2px solid $color3;
                         font-size: 2rem;
@@ -853,7 +996,8 @@ body{
                         margin-bottom: 20px;
                         transition: 0.2s;
                         cursor: pointer;
-                        &:hover{
+
+                        &:hover {
                             box-shadow: inset 0 0 20px $color2;
                             border: 2px solid $color2;
                             background-color: $color2;
@@ -861,10 +1005,12 @@ body{
                             color: $color4;
                         }
                     }
-                    .flow-card-wrapper{
+
+                    .flow-card-wrapper {
                         display: flex;
                         align-items: center;
-                        .flow-card{
+
+                        .flow-card {
                             font-size: 1.5rem;
                             font-weight: 600;
                             color: $color2;
@@ -880,7 +1026,8 @@ body{
                             text-align: center;
                             transition: 0.2s;
                             cursor: pointer;
-                            &:hover{
+
+                            &:hover {
                                 box-shadow: inset 0 0 20px $color2;
                                 border: 2px solid $color2;
                                 background-color: $color2;
@@ -891,10 +1038,134 @@ body{
                     }
                 }
             }
-            
+
         }
     }
+
+    .transform-section {
+        background-color: $color4;
+        .transform-container {
+            padding: 100px 0px;
+            .heading{
+                color: $color2;
+                font-size: 1.8rem;
+                width: 100%;
+                padding-bottom: 100px;
+                text-align: center;
+            }
+            .transform-window {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .controls-wrapper {
+                    min-width: 50%;
+                    h2{
+                        font-size: 1.8rem;
+                        color: $color5;
+                    }
+                    .controls {
+                        padding: 40px 0px;
+                        .slider-label {
+                            padding: 15px 0px;
+                            color: $color2;
+                            .label {
+                                font-size: 1.2rem;
+                                padding-bottom: 10px;
+                                font-weight: 600;
+                            }
+                            .slider-wrapper{
+                                display: flex;
+                                align-items: center;
+                                justify-content: start;
+                                .value {
+                                    padding: 5px 0px;
+                                    margin-left: 20px;
+                                    border-radius: 5px;
+                                    border: 1px solid $color3;
+                                    font-size: 1.2rem;
+                                    font-weight: 600;
+                                    background-color: $color1;
+                                    height: 100%;
+                                    width: 65px;
+                                    text-align: center;
+                                }
     
+                            }
+                            
+
+                            .custom-slider {
+                                width: 400px;
+                                -webkit-appearance: none;
+                                appearance: none;
+                                height: 12px;
+                                background: $color1;
+                                box-shadow: inset 0 0 5px $color3;
+                                border-radius: 5px;
+                                outline: none;
+                                transition: 0.3s ease;
+                            }
+
+                            /* Style for the slider thumb */
+                            .custom-slider::-webkit-slider-thumb {
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 28px;
+                                height: 28px;
+                                background-color: $color2;
+                                box-shadow: inset 0 0 5px $color5;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                transition: background-color 0.3s ease;
+                            }
+
+                            .custom-slider::-moz-range-thumb {
+                                width: 20px;
+                                height: 20px;
+                                background-color: $color2;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                transition: background-color 0.3s ease;
+                            }
+
+                            /* Hover effect on the thumb */
+                            .custom-slider:hover::-webkit-slider-thumb {
+                                background-color: $color2;
+                            }
+
+                            .custom-slider:hover::-moz-range-thumb {
+                                background-color: $color2;
+                            }
+
+                            /* Active/focused styling */
+                            .custom-slider:active::-webkit-slider-thumb {
+                                background-color: $color2;
+                            }
+
+                            .custom-slider:active::-moz-range-thumb {
+                                background-color: $color2;
+                            }
+                        }
+                    }
+                }
+
+                .transform-shape-wrapper {
+                    height: 500px;
+                    width: 500px;
+                    background-color: $color1;
+                    box-shadow: inset 0 0 20px $color3;
+                    border-radius: 5px;
+
+                    .transform-shape {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        background: linear-gradient(180deg, $color4 0%, $color2 100%);
+                        border: 1px solid $color3;
+                    }
+                }
+            }
+        }
+    }
 
 
 
@@ -905,16 +1176,19 @@ body{
 
 
 
-    .test-section{
+
+    .test-section {
         // height: 500vh;
         width: 100vh;
         // background-color: #ffffff;
         position: relative;
-        .trigger{
+
+        .trigger {
             height: 100vh;
             width: 100vh;
+
             // background-color: #000000;
-            .mark{
+            .mark {
                 border: 1px solid $color4;
                 height: 2px;
                 width: 100px;
@@ -931,18 +1205,21 @@ body{
 ::-webkit-scrollbar {
     width: 5px;
     background-color: $color1;
-  }
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 1px $color1; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px $color1;
     border-radius: 5px;
-  }
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $color2; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color2;
     border-radius: 10px;
-  }
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: $color2; 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color2;
+}

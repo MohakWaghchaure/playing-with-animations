@@ -10,6 +10,7 @@ import MouseEffect from './components/MouseEffect.js';
 import Cards from './components/Cards.js';
 import Flow from './components/Flow.js';
 import ChessBoard from './components/ChessBoard.js';
+import Transform from './components/Transform.js';
 import { Fragment } from 'react';
 import Bottom from './components/Bottom.js';
 
@@ -25,6 +26,7 @@ function App() {
         <ChessBoard></ChessBoard>
         <Cards></Cards>
         <Flow></Flow>
+        <Transform></Transform>
         <ScrollEffect></ScrollEffect>
         
         {/* <DrawingSpace></DrawingSpace> */}
