@@ -12,6 +12,7 @@ function IntroSection(){
                 <div className='backgroundCircle three odd'></div>
                 <div className='backgroundCircle four even'></div>
                 <div className='backgroundCircle five odd'></div>
+                <div className='scroll-indicatior'>Scroll down to see more!</div>
             </div>
         </Fragment>
     )

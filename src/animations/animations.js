@@ -97,6 +97,12 @@ window.onload = function () {
     t5.scaleIn(".backgroundCircle.odd", { duration: 40 });
     t5.scaleOut(".backgroundCircle.odd", { duration: 40 });
 
+    // -----------Scroll down indicator Effect-------------------------
+    let tScrollDown = gsap.timeline({repeat: 5, delay: 5}); 
+    tScrollDown.to(".scroll-indicatior", { y: 0, opacity: 0, ease: "sine.out", });
+    tScrollDown.to(".scroll-indicatior", { y: 5, opacity: 1, ease: "sine.out", });
+    tScrollDown.to(".scroll-indicatior", { y: 0, opacity: 0, ease: "sine.out", });
+    tScrollDown.to(".scroll-indicatior", { y: 5, opacity: 1, ease: "sine.out", });
     
     // ----------- Mouse Effect-------------------
 
