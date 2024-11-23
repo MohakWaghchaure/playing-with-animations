@@ -70,7 +70,7 @@ body {
     justify-content: center;
     text-align: center;
 
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 992px) {
         display: flex;
     }
 }
@@ -80,7 +80,7 @@ body {
     position: relative;
     overflow-x: hidden;
 
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 992px) {
         display: none;
     }
 
@@ -383,11 +383,17 @@ body {
 
             .title {
                 font-size: 1.8rem;
-                padding-bottom: 100px;
+                padding-bottom: 20px;
                 text-align: center;
                 color: $color2;
             }
-
+            .instruction{
+                color: $color2;
+                font-size: 1.2rem;
+                padding-bottom: 100px;
+                width: 100%;
+                text-align: center;
+            }
             .bouncing-ball {
                 position: relative;
                 height: 100%;
@@ -1123,6 +1129,9 @@ body {
                                 border-radius: 5px;
                                 outline: none;
                                 transition: 0.3s ease;
+                                @media screen and (max-width: 1200px) {
+                                    width: 250px;
+                                }
                             }
 
                             /* Style for the slider thumb */
